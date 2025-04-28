@@ -1,0 +1,123 @@
+@font-face{
+    font-family: TheFont;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: TheFont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.container{
+    display: flex;
+    width: 800px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.right{
+    width: 60%
+
+}
+.left{
+    width: 40%;
+}
+.left img{
+    width: 100%
+}
+ul {
+    list-style-image: url(./assets/images/icon-list.svg);
+}
+li{
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+input{
+    padding: 10px 20px;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid hsl(0, 0%,58%);
+}
+button{
+    font-family: inherit;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(235, 18%, 26%);
+    cursor: pointer;
+}
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+    transition: all 1s;
+}
+label{
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 50px;
+}
+.hide{
+    display: none;
+}
+.container_2{
+    background-color: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 5px;
+}
+.container_2 h1{
+    font-size: 40px;
+}
+.icon{
+    width: 50px;
+}
+.container_2 button{
+    width: 90%;
+}
+@media (max-width:768px){
+    .container{
+        flex-direction: column-reverse;
+        width:100%;
+        padding: 0;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    .right{
+        width: 100%;
+        padding: 20px;
+    }
+    .left {
+        width: 100%;
+    }
+    .left img {
+        filter: url("./assets/images/illustration-sign-up-mobile.svg");
+    }
+    form {
+        width: 90%;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .container_2{
+        min-height: 100vh;
+    }
+}
